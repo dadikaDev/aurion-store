@@ -8,7 +8,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="styles/style.css" />
-        <title>Document</title>
+        <title>Aurion</title>
     </head>
     <body>
         <div class="header-container">
@@ -31,7 +31,7 @@
             <div class="middle-section">
                 <a class="logo-link" href="/">
                     <img
-                        src="/assets/images/icons/BO_Logo_White.svg"
+                        src="/assets/images/icons/logo.svg"
                         alt="Tech Store Logo"
                     />
                 </a>
@@ -62,28 +62,42 @@
         </div>
         <nav class="sidebar" id="sidebar">
             <div class="sidebar-header">
-                <button class="close-btn" id="closeSidebar">✕</button>
+                <button class="close-btn" id="closeSidebar">
+                    ✕ <span class="close-text">Close</span>
+                </button>
             </div>
-
-            <div class="sidebar-link">
-                <div>Home</div>
-            </div>
-            <div class="sidebar-link">
-                <div>Explore</div>
-            </div>
-            <div class="sidebar-link">
-                <div>Subscriptions</div>
-            </div>
-            <div class="sidebar-link">
-                <div>Originals</div>
-            </div>
-            <div class="sidebar-link">
-                <div>YouTube Music</div>
-            </div>
-            <div class="sidebar-link">
-                <div>Library</div>
+            <ul class="sidebar-links">
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Headphones</a></li>
+                <li><a href="#">Soundbars</a></li>
+                <li><a href="#">Televisions</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+            <div class="down-section">
+                <a href="#" class="sidebar-link-item">
+                    <img
+                        src="/assets/images/icons/icon_search.svg"
+                        alt="Search"
+                    />
+                    <span>Search</span>
+                </a>
+                <a href="#" class="sidebar-link-item black-search-icon">
+                    <img
+                        src="/assets/images/icons/icon_store_white.svg"
+                        alt="Store Locator"
+                    />
+                    <span>Find Store</span>
+                </a>
+                <a href="#" class="sidebar-link-item black-search-icon">
+                    <img
+                        src="/assets/images/icons/icon_login_white.svg"
+                        alt="User Account"
+                    />
+                    <span>Account</span>
+                </a>
             </div>
         </nav>
+
         <div class="background-image">
             <div class="content-container">
                 <h1>Welcome to Tech Store</h1>
@@ -102,7 +116,7 @@
                     <div class="slide">
                         <span class="badge">New</span>
                         <img
-                            src="/assets/images/Aurion_Premiere_1.jpg"
+                            src="/assets/images/Aurion Aura_1.png"
                             alt="Aurion Pro"
                         />
                         <span class="product-name">Aurion Pro</span>
@@ -111,7 +125,7 @@
                     <div class="slide">
                         <span class="badge">New</span>
                         <img
-                            src="/assets/images/Aurion_Premiere_1.jpg"
+                            src="/assets/images/Aurion Nova_2.png"
                             alt="Aurion Max"
                         />
                         <span class="product-name">Aurion Max</span>
@@ -120,7 +134,7 @@
                     <div class="slide">
                         <span class="badge">New</span>
                         <img
-                            src="/assets/images/Aurion_Premiere_1.jpg"
+                            src="/assets/images/Aurion S2_1.png"
                             alt="Aurion Lite"
                         />
                         <span class="product-name">Aurion Lite</span>
@@ -129,7 +143,7 @@
                     <div class="slide">
                         <span class="badge">New</span>
                         <img
-                            src="/assets/images/Aurion_Premiere_1.jpg"
+                            src="/assets/images/Aurion A1_1.png"
                             alt="Aurion Ultra"
                         />
                         <span class="product-name">Aurion Ultra</span>
@@ -198,38 +212,43 @@
                     </ul>
 
                     <form class="subscribe-form">
-                        <div class="form-group full-width">
-                            <label for="email"
-                                >Email <span>(required)</span></label
-                            >
+                        <div class="form-group floating">
                             <input
                                 type="email"
                                 id="email"
                                 name="email"
+                                placeholder=""
                                 required
                             />
+                            <label for="email"
+                                >Email <span>(required)</span></label
+                            >
                         </div>
 
                         <div class="form-row">
-                            <div class="form-group">
-                                <label for="firstName"
-                                    >First Name <span>(required)</span></label
-                                >
+                            <div class="form-group floating">
                                 <input
                                     type="text"
                                     id="firstName"
                                     name="firstName"
+                                    placeholder=""
+                                    required
                                 />
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName"
-                                    >Last Name <span>(required)</span></label
+                                <label for="firstName"
+                                    >First Name <span>(required)</span></label
                                 >
+                            </div>
+                            <div class="form-group floating">
                                 <input
                                     type="text"
                                     id="lastName"
                                     name="lastName"
+                                    placeholder=""
+                                    required
                                 />
+                                <label for="lastName"
+                                    >Last Name <span>(required)</span></label
+                                >
                             </div>
                         </div>
                         <button type="submit" class="subscribe-button">
@@ -239,6 +258,47 @@
                 </div>
             </div>
         </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h2>Aurion</h2>
+                    <p>Experience premium products and exclusive insights.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aurion. All rights reserved.</p>
+            </div>
+        </footer>
     </body>
     <script src="script.js"></script>
 </html>

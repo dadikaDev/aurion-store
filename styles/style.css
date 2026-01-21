@@ -6,6 +6,7 @@ body {
         sans-serif;
     min-height: 200vh;
 }
+
 .background-image {
     background-image: url("/assets//images/main-image.png");
     background-size: cover;
@@ -88,6 +89,11 @@ h1 {
     display: flex;
     align-items: center;
     margin-left: 30px;
+}
+
+.logo-link img {
+    width: 65px;
+    margin-top: 5px;
 }
 
 .search-button,
@@ -252,6 +258,12 @@ h2 {
     height: 250px;
     object-fit: cover;
     display: block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.slide img:hover {
+    transform: scale(1.05);
 }
 
 .badge {
@@ -309,44 +321,6 @@ h2 {
     background-image: url("/assets//images/icons/chevron-white-right-black-bg.svg");
 }
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    width: 260px;
-    height: 100vh;
-    background: white;
-
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-
-    z-index: 10000;
-}
-
-.sidebar.active {
-    transform: translateX(0);
-}
-
-.sidebar-header {
-    height: 64px;
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-    border-bottom: 1px solid #eee;
-}
-
-.close-btn {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-body.no-scroll {
-    overflow: hidden;
-}
-
 .subscribe-section {
     background: #111;
     padding: 100px 0;
@@ -357,24 +331,25 @@ body.no-scroll {
 .subscribe-wrapper {
     display: flex;
     width: 80%;
-    max-width: 1200px;
-    background: transparent;
+    max-width: 1600px;
 }
 
-.subscribe-image {
-    flex: 1;
+.subscribe-image,
+.subscribe-content {
+    width: 50%;
 }
 
 .subscribe-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .subscribe-content {
-    flex: 1;
     background: white;
-    padding: 60px;
+    padding: 100px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -382,7 +357,7 @@ body.no-scroll {
 }
 
 .subscribe-title {
-    margin-bottom: 24px;
+    margin-bottom: 50px;
     font-size: 24px;
     color: black;
 }
@@ -390,13 +365,12 @@ body.no-scroll {
 .subscribe-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    position: relative;
+    margin-top: 60px;
 }
 
 .form-group label {
@@ -413,7 +387,7 @@ body.no-scroll {
 
 .form-group input {
     border: none;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 1px solid #ccc;
     padding: 5px 0;
     font-size: 14px;
     outline: none;
@@ -421,11 +395,12 @@ body.no-scroll {
 }
 
 .form-group input:focus {
-    border-bottom-color: #000000;
+    border-bottom-color: #000;
 }
 
 .form-row {
     display: flex;
+    margin-top: -15px;
     gap: 10px;
 }
 
@@ -437,26 +412,21 @@ body.no-scroll {
     padding: 10px 26px;
     border-radius: 40px;
     width: 140px;
-    text-align: center;
-    border: 2px solid;
+    border: 2px solid black;
     background-color: black;
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 1rem;
-    line-height: 1.5rem;
-    letter-spacing: 0.2px;
-    font-weight: 400;
     font-family:
         Lexend Deca,
         sans-serif;
     transition: background-color 0.2s linear;
-    margin-top: 15px;
+    margin-top: 40px;
 }
 
 .subscribe-button:hover {
-    color: rgb(0, 0, 0);
-    border: 2px, solid, black;
-    cursor: pointer;
     background: transparent;
+    color: black;
+    cursor: pointer;
 }
 
 .features-list {
@@ -476,3 +446,304 @@ body.no-scroll {
     height: 20px;
     margin-right: 15px;
 }
+
+.form-group.floating {
+    position: relative;
+    padding-top: 20px;
+}
+
+.form-group.floating input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+    font-size: 14px;
+    outline: none;
+    background: transparent;
+    width: 100%;
+}
+
+.form-group.floating label {
+    position: absolute;
+    left: 0;
+    top: 18px;
+    font-size: 14px;
+    color: #777;
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+
+.form-group.floating input:focus + label,
+.form-group.floating input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 12px;
+    color: #000;
+}
+
+.form-group.floating input:focus {
+    border-bottom-color: #000;
+}
+
+.footer {
+    background-color: #111;
+    color: #ccc;
+    font-family: "Lexend Deca", sans-serif;
+    padding: 0px 20px 20px;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footer-brand h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-right: 220px;
+}
+
+.footer-brand p {
+    font-size: 12px;
+    line-height: 0.5;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-column {
+    text-align: left;
+    flex: 0 0 150px; /* фиксированная ширина колонки */
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0 0;
+    border-top: 1px solid #222;
+    font-size: 13px;
+    color: #555;
+}
+
+/* ================== Sidebar ================== */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 10000;
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden; /* прокрутка только у верхних ссылок */
+}
+
+/* Открытый sidebar */
+.sidebar.active {
+    transform: translateX(0);
+}
+
+/* Header sidebar */
+.sidebar-header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+
+    display: flex; /* делаем flex-контейнер */
+    align-items: center; /* выравниваем вертикально */
+    gap: 6px; /* расстояние между крестиком и текстом */
+}
+
+.close-text {
+    color: #191817;
+    font-weight: 500;
+    font-size: 0.75rem;
+    margin-top: 3px;
+}
+
+/* Запрет прокрутки body при открытом sidebar */
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* Верхний список ссылок */
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin-left: 22px;
+}
+
+/* Каждый элемент списка */
+.sidebar-links li {
+    margin-bottom: 12px;
+}
+
+.sidebar-links li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sidebar-links li a:hover {
+    text-decoration: underline;
+}
+
+/* ================== Нижний блок ================== */
+.down-section {
+    display: flex;
+    flex-direction: column; /* вертикально */
+    gap: 10px; /* расстояние между ссылками */
+    margin-top: auto; /* прижимает к низу sidebar */
+
+    border-top: 1px solid #eee; /* линия */
+    padding-top: 15px;
+
+    /* Сделать линию почти на всю ширину */
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    box-sizing: border-box; /* чтобы padding не обрезал ширину */
+}
+
+.down-section span {
+    font-size: 12px;
+}
+
+.down-section .sidebar-link-item {
+    margin-left: 20px; /* сдвиг ссылок вправо */
+}
+
+/* ================== Ссылки с иконкой ================== */
+.sidebar-link-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 1; /* чтобы ссылки были кликабельны */
+}
+
+/* Иконки */
+.sidebar-link-item img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* Если иконка белая, делаем черной через фильтр */
+.black-search-icon img {
+    filter: invert(1);
+}
+
+/* Hover эффект только для текста */
+.sidebar-link-item:hover span {
+    text-decoration: underline;
+}
+
+/*
+Aurion Product Name Ideas
+
+Aurion Aether
+
+Aurion Pulse
+
+Aurion Nova
+
+Aurion Echo
+
+Aurion Halo
+
+Aurion Core
+
+Aurion Flow
+
+Aurion Axis
+
+Aurion Vibe
+
+Aurion Zenith
+
+Aurion Aura
+
+Aurion Prime
+
+Aurion Wave
+
+Aurion Sonic
+
+Aurion Rise
+
+Aurion Orbit
+
+Aurion Element
+
+Aurion Lumos
+
+Aurion One
+
+Aurion Signature
+
+If you want closer structure to B&O style (numbers + names)
+
+Aurion A1 / A3 / A7 / A9 (portable → flagship speakers)
+
+Aurion H10 / H50 / H100 (headphones)
+
+Aurion S2 / S5 (smart speakers)
+
+Aurion X / X Pro / X Elite (special editions)
+*/
