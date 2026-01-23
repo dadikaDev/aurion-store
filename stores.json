@@ -1,0 +1,202 @@
+[
+    {
+        "id": 1,
+        "name": "Aurion Store New York",
+        "status": "Closes at 6:00 PM",
+        "address": "123 Madison Ave",
+        "city": "New York",
+        "state": "NY",
+        "lat": 40.7128,
+        "lng": -74.006
+    },
+    {
+        "id": 2,
+        "name": "Aurion Store Los Angeles",
+        "status": "Closes at 7:00 PM",
+        "address": "456 Sunset Blvd",
+        "city": "Los Angeles",
+        "state": "CA",
+        "lat": 34.0522,
+        "lng": -118.2437
+    },
+    {
+        "id": 3,
+        "name": "Aurion Store Chicago",
+        "status": "Closes at 6:00 PM",
+        "address": "789 Michigan Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "lat": 41.8781,
+        "lng": -87.6298
+    },
+    {
+        "id": 4,
+        "name": "Aurion Store Miami",
+        "status": "Closes at 8:00 PM",
+        "address": "101 Ocean Dr",
+        "city": "Miami",
+        "state": "FL",
+        "lat": 25.7617,
+        "lng": -80.1918
+    },
+    {
+        "id": 5,
+        "name": "Aurion Store San Francisco",
+        "status": "Closes at 6:00 PM",
+        "address": "202 Market St",
+        "city": "San Francisco",
+        "state": "CA",
+        "lat": 37.7749,
+        "lng": -122.4194
+    },
+    {
+        "id": 6,
+        "name": "Aurion Store Houston",
+        "status": "Closes at 7:00 PM",
+        "address": "303 Main St",
+        "city": "Houston",
+        "state": "TX",
+        "lat": 29.7604,
+        "lng": -95.3698
+    },
+    {
+        "id": 7,
+        "name": "Aurion Store Phoenix",
+        "status": "Closes at 6:00 PM",
+        "address": "404 Central Ave",
+        "city": "Phoenix",
+        "state": "AZ",
+        "lat": 33.4484,
+        "lng": -112.074
+    },
+    {
+        "id": 8,
+        "name": "Aurion Store Philadelphia",
+        "status": "Closes at 6:00 PM",
+        "address": "505 Market St",
+        "city": "Philadelphia",
+        "state": "PA",
+        "lat": 39.9526,
+        "lng": -75.1652
+    },
+    {
+        "id": 9,
+        "name": "Aurion Store San Antonio",
+        "status": "Closes at 7:00 PM",
+        "address": "606 Broadway St",
+        "city": "San Antonio",
+        "state": "TX",
+        "lat": 29.4241,
+        "lng": -98.4936
+    },
+    {
+        "id": 10,
+        "name": "Aurion Store San Diego",
+        "status": "Closes at 6:00 PM",
+        "address": "707 Harbor Dr",
+        "city": "San Diego",
+        "state": "CA",
+        "lat": 32.7157,
+        "lng": -117.1611
+    },
+    {
+        "id": 11,
+        "name": "Aurion Store Dallas",
+        "status": "Closes at 7:00 PM",
+        "address": "808 Elm St",
+        "city": "Dallas",
+        "state": "TX",
+        "lat": 32.7767,
+        "lng": -96.797
+    },
+    {
+        "id": 12,
+        "name": "Aurion Store San Jose",
+        "status": "Closes at 6:00 PM",
+        "address": "909 Santa Clara St",
+        "city": "San Jose",
+        "state": "CA",
+        "lat": 37.3382,
+        "lng": -121.8863
+    },
+    {
+        "id": 13,
+        "name": "Aurion Store Austin",
+        "status": "Closes at 8:00 PM",
+        "address": "101 Congress Ave",
+        "city": "Austin",
+        "state": "TX",
+        "lat": 30.2672,
+        "lng": -97.7431
+    },
+    {
+        "id": 14,
+        "name": "Aurion Store Jacksonville",
+        "status": "Closes at 6:00 PM",
+        "address": "202 Bay St",
+        "city": "Jacksonville",
+        "state": "FL",
+        "lat": 30.3322,
+        "lng": -81.6557
+    },
+    {
+        "id": 15,
+        "name": "Aurion Store Fort Worth",
+        "status": "Closes at 7:00 PM",
+        "address": "303 Main St",
+        "city": "Fort Worth",
+        "state": "TX",
+        "lat": 32.7555,
+        "lng": -97.3308
+    },
+    {
+        "id": 16,
+        "name": "Aurion Store Columbus",
+        "status": "Closes at 6:00 PM",
+        "address": "404 High St",
+        "city": "Columbus",
+        "state": "OH",
+        "lat": 39.9612,
+        "lng": -82.9988
+    },
+    {
+        "id": 17,
+        "name": "Aurion Store Charlotte",
+        "status": "Closes at 6:00 PM",
+        "address": "505 Trade St",
+        "city": "Charlotte",
+        "state": "NC",
+        "lat": 35.2271,
+        "lng": -80.8431
+    },
+    {
+        "id": 18,
+        "name": "Aurion Store Indianapolis",
+        "status": "Closes at 7:00 PM",
+        "address": "606 Meridian St",
+        "city": "Indianapolis",
+        "state": "IN",
+        "lat": 39.7684,
+        "lng": -86.1581
+    },
+    {
+        "id": 19,
+        "name": "Aurion Store Seattle",
+        "status": "Closes at 6:00 PM",
+        "address": "707 Pike St",
+        "city": "Seattle",
+        "state": "WA",
+        "lat": 47.6062,
+        "lng": -122.3321
+    },
+    {
+        "id": 20,
+        "name": "Aurion Store Denver",
+        "status": "Closes at 6:00 PM",
+        "address": "808 Colfax Ave",
+        "city": "Denver",
+        "state": "CO",
+        "lat": 39.7392,
+        "lng": -104.9903
+    }
+]

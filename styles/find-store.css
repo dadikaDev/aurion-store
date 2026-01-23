@@ -1,0 +1,181 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.header-container {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    background: #ffffff;
+}
+
+.logo-link img {
+    width: 65px;
+    filter: brightness(0);
+}
+
+.content-wrapper {
+    display: flex;
+    height: calc(100vh - 110px);
+}
+
+.find-store-sidebar {
+    width: 500px;
+    min-width: 500px;
+    max-width: 500px;
+    padding: 24px;
+    background: #f3f1f159;
+    overflow-y: auto;
+}
+
+.find-store-sidebar h1 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: 400;
+    margin-bottom: 8px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 0.875rem;
+    line-height: 1.29;
+    margin-bottom: 24px;
+    color: #555;
+    font-weight: 500;
+}
+
+.search-form {
+    display: flex;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.search-form input {
+    flex: 1;
+    padding: 6px 10px;
+    border: 1px solid #cccccc72;
+    font-size: 0.95rem;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.search-form button {
+    padding: 6px 12px;
+    border: 1px solid #cccccc72;
+    background: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    font-size: 0.9rem;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-form img {
+    filter: brightness(0.7);
+}
+
+.navigation-icon {
+    width: 28px;
+    height: 24px;
+    opacity: 0.4;
+}
+
+.store-card {
+    background: #f0efef73;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid transparent;
+    transition:
+        background-color 0.2s linear,
+        border 0.2s linear;
+}
+
+.store-card:hover {
+    background-color: white;
+    border: 1px solid #cccccc72;
+}
+
+.store-card h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.logo-icon {
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    border-radius: 50%;
+    border: 0.5px solid black;
+    object-fit: contain;
+    display: block;
+    filter: brightness(0);
+}
+
+.store-info {
+    padding-left: 43px;
+}
+
+.store-card .status {
+    font-size: 0.85rem;
+    color: black;
+    margin-top: 0px;
+}
+
+.store-card .address {
+    font-size: 0.85rem;
+}
+
+.store-card button {
+    font-family: Lexend Deca;
+    padding: 6px 26px;
+    border-radius: 40px;
+    overflow: hidden;
+    min-width: 140px;
+    text-align: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s linear;
+}
+
+.store-card button:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+.find-store-map {
+    flex: 1;
+    background: #ddd;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    background: #cfcfcf;
+}
+
+.store-card.active {
+    background-color: #fff8c4;
+    border: 1px solid #f1c40f;
+}
