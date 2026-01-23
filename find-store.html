@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/styles/find-store.css" />
+        <title>Aurion Store Finder</title>
+    </head>
+    <body>
+        <header class="header-container">
+            <a class="logo-link" href="/">
+                <img src="/assets/images/icons/logo.svg" alt="Aurion Logo" />
+            </a>
+        </header>
+        <main class="content-wrapper">
+            <aside class="find-store-sidebar">
+                <h1>Find a store – Aurion near me</h1>
+                <p class="subtitle">Search by Address or Region</p>
+
+                <form class="search-form">
+                    <input type="text" placeholder="e.g. New York, NY" />
+                    <button type="submit">
+                        <img
+                            src="/assets/images/icons/find-store-icons/icon_search_white.svg"
+                            alt="Search"
+                        />
+                    </button>
+                    <button class="navigation-button" type="button">
+                        <img
+                            class="navigation-icon"
+                            src="/assets/images/icons/find-store-icons/navigation.png"
+                            alt="Navigation"
+                        />
+                    </button>
+                </form>
+
+                <div class="store-results"></div>
+            </aside>
+            <section class="find-store-map">
+                <div id="map"></div>
+            </section>
+        </main>
+    </body>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbXUSWLl_-yFFJRMnQXTs8Yvk6gYMJpUs&callback=initMap"
+        async
+        defer
+    ></script>
+    <script src="/scripts/app.js"></script>
+</html>
