@@ -15,7 +15,8 @@ body {
     width: 100%;
     height: 49vw;
     display: flex;
-    align-items: end;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
 .content-container {
@@ -534,7 +535,7 @@ h2 {
 
 .footer-column {
     text-align: left;
-    flex: 0 0 150px; /* фиксированная ширина колонки */
+    flex: 0 0 150px;
 }
 
 .footer-column h3 {
@@ -562,7 +563,6 @@ h2 {
     color: #555;
 }
 
-/* ================== Sidebar ================== */
 .sidebar {
     position: fixed;
     top: 0;
@@ -578,15 +578,13 @@ h2 {
     flex-direction: column;
     padding: 20px;
     box-sizing: border-box;
-    overflow: hidden; /* прокрутка только у верхних ссылок */
+    overflow: hidden;
 }
 
-/* Открытый sidebar */
 .sidebar.active {
     transform: translateX(0);
 }
 
-/* Header sidebar */
 .sidebar-header {
     height: 64px;
     display: flex;
@@ -599,10 +597,9 @@ h2 {
     border: none;
     font-size: 24px;
     cursor: pointer;
-
-    display: flex; /* делаем flex-контейнер */
-    align-items: center; /* выравниваем вертикально */
-    gap: 6px; /* расстояние между крестиком и текстом */
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .close-text {
@@ -612,19 +609,16 @@ h2 {
     margin-top: 3px;
 }
 
-/* Запрет прокрутки body при открытом sidebar */
 body.no-scroll {
     overflow: hidden;
 }
 
-/* Верхний список ссылок */
 .sidebar-links {
     list-style: none;
     padding: 0;
     margin-left: 22px;
 }
 
-/* Каждый элемент списка */
 .sidebar-links li {
     margin-bottom: 12px;
 }
@@ -640,21 +634,17 @@ body.no-scroll {
     text-decoration: underline;
 }
 
-/* ================== Нижний блок ================== */
 .down-section {
     display: flex;
-    flex-direction: column; /* вертикально */
-    gap: 10px; /* расстояние между ссылками */
-    margin-top: auto; /* прижимает к низу sidebar */
-
-    border-top: 1px solid #eee; /* линия */
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+    border-top: 1px solid #eee;
     padding-top: 15px;
-
-    /* Сделать линию почти на всю ширину */
     margin-left: 0;
     margin-right: 0;
     width: 100%;
-    box-sizing: border-box; /* чтобы padding не обрезал ширину */
+    box-sizing: border-box;
 }
 
 .down-section span {
@@ -662,10 +652,9 @@ body.no-scroll {
 }
 
 .down-section .sidebar-link-item {
-    margin-left: 20px; /* сдвиг ссылок вправо */
+    margin-left: 20px;
 }
 
-/* ================== Ссылки с иконкой ================== */
 .sidebar-link-item {
     display: flex;
     align-items: center;
@@ -674,76 +663,19 @@ body.no-scroll {
     text-decoration: none;
     font-size: 14px;
     cursor: pointer;
-    z-index: 1; /* чтобы ссылки были кликабельны */
+    z-index: 1;
 }
 
-/* Иконки */
 .sidebar-link-item img {
     width: 24px;
     height: 24px;
     object-fit: contain;
 }
 
-/* Если иконка белая, делаем черной через фильтр */
 .black-search-icon img {
     filter: invert(1);
 }
 
-/* Hover эффект только для текста */
 .sidebar-link-item:hover span {
     text-decoration: underline;
 }
-
-/*
-Aurion Product Name Ideas
-
-Aurion Aether
-
-Aurion Pulse
-
-Aurion Nova
-
-Aurion Echo
-
-Aurion Halo
-
-Aurion Core
-
-Aurion Flow
-
-Aurion Axis
-
-Aurion Vibe
-
-Aurion Zenith
-
-Aurion Aura
-
-Aurion Prime
-
-Aurion Wave
-
-Aurion Sonic
-
-Aurion Rise
-
-Aurion Orbit
-
-Aurion Element
-
-Aurion Lumos
-
-Aurion One
-
-Aurion Signature
-
-If you want closer structure to B&O style (numbers + names)
-
-Aurion A1 / A3 / A7 / A9 (portable → flagship speakers)
-
-Aurion H10 / H50 / H100 (headphones)
-
-Aurion S2 / S5 (smart speakers)
-
-Aurion X / X Pro / X Elite (special editions)
-*/
