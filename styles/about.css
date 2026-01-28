@@ -1,0 +1,349 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.background-image {
+    position: relative;
+    background-image: url("/assets/images/Aurion\ Aura\ main\ image.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 49vw;
+    display: flex;
+    align-items: flex-start;
+}
+
+.title span {
+    display: block;
+}
+
+.content-container-about {
+    margin-left: 50px;
+    margin-top: 250px;
+    color: rgb(252, 250, 238);
+    cursor: pointer;
+    max-width: calc(100% - 50px);
+}
+
+.shop-button {
+    height: 44px;
+    border-radius: 40px;
+    overflow: hidden;
+    min-width: 140px;
+    text-align: center;
+    border: none;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    font-family:
+        Lexend Deca,
+        sans-serif;
+    transition: background-color 0.2s linear;
+}
+
+.shop-button:hover {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+}
+
+.header-container {
+    position: absolute;
+    background-color: transparent;
+}
+
+.action-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.action-buttons::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30px;
+    right: 30px;
+    height: 1px;
+    background: grey;
+}
+
+.main-content {
+    min-height: 100vh;
+    background-color: rgb(243, 240, 240);
+    display: flex;
+    direction: row;
+    flex-direction: row;
+    padding: 30px;
+    gap: 20px;
+}
+
+.product-image {
+    position: relative;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-photo {
+    width: 65%;
+    height: auto;
+    margin: 0;
+}
+
+.image-buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 30px;
+    padding-right: 200px;
+}
+
+.left-btn,
+.right-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.left-btn {
+    background-image: url("/assets/images/icons/chevron-white-left-black-bg.svg");
+    filter: invert(1);
+}
+
+.right-btn {
+    background-image: url("/assets/images/icons/chevron-white-right-black-bg.svg");
+    filter: invert(1);
+}
+
+.zoom {
+    position: absolute;
+    top: 40px;
+    right: 110px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(181, 180, 180);
+    background-image: url("/assets/images/icons/maximize.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.product-details {
+    flex: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 130px;
+}
+
+.product-name {
+    font-size: 0.8rem;
+    letter-spacing: 0.2px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.593);
+    margin-bottom: 0;
+}
+
+.product-description {
+    font-size: 1.4rem;
+    letter-spacing: 0.1px;
+    font-weight: 100;
+    margin: 0;
+}
+
+.product-colors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    height: 60px;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.product-colors::before,
+.product-colors::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: grey;
+}
+
+.product-colors::before {
+    top: 0;
+}
+
+.product-colors::after {
+    bottom: 0;
+}
+
+.color-name {
+    font-size: 0.8rem;
+    font-weight: 100;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.593);
+}
+
+.circle-btn {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-left: 6px;
+    background: transparent;
+}
+
+.circle-btn:hover {
+    transform: scale(1.1);
+}
+
+.circle-btn:focus {
+    outline: 2px solid black;
+    outline-offset: 2px;
+}
+
+.circle-btn.black {
+    background-color: #000;
+}
+
+.circle-btn.gray {
+    background-color: #8e8e8e;
+}
+
+.circle-btn.brown {
+    background-color: #6f4e37;
+}
+
+.circle-btn.beige {
+    background-color: #e8d8c3;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    letter-spacing: 0.1px;
+    font-weight: 100;
+    margin-top: 30px;
+}
+
+.add-button {
+    height: 44px;
+    border-radius: 40px;
+    background-color: transparent;
+    border: 2px solid black;
+    width: 250px;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    transition: background-color 0.2s linear;
+}
+
+.add-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.product-features {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.product-features li {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+
+.product-features li .product-mark {
+    width: 12px;
+    height: 12px;
+    margin-right: 1px;
+    filter: brightness(0);
+}
+
+.subscribe-container {
+    background-color: rgb(252, 250, 238);
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ten-years-image {
+    width: 120px;
+    height: auto;
+}
+
+.subscribe-description {
+    font-size: 0.9rem;
+    font-weight: 100;
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+.sign-up-button {
+    height: 44px;
+    border-radius: 40px;
+    min-width: 160px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: background-color 0.2s linear;
+}
+
+.sign-up-button:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.footer {
+    padding-top: 30px;
+}
